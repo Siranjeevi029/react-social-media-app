@@ -1,8 +1,8 @@
-import {createContext,useState,useEffect} from 'react' 
-import { useNavigate, useLocation } from 'react-router-dom'
+import { createContext, useEffect, useState } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 import api from '../api/posts'
-import useWindowSize from '../hooks/useWindowSize'
 import useAxiosFetch from '../hooks/useAxiosFetch'
+import useWindowSize from '../hooks/useWindowSize'
 
 
 const DataContext = createContext({});
@@ -87,7 +87,7 @@ const [editBody,setEditBody] = useState('');
    
     
      try{
-      const response = await api.post('/posts',newPost);
+      await api.post('/posts',newPost);
      
      
       
