@@ -20,7 +20,7 @@ const EditPost = () => {
        setEditTitle(post.title)
     setEditBody(post.body);
      }
-  },[post]);
+  },[post,setEditTitle, setEditBody]);
 
 
 
