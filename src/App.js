@@ -14,9 +14,6 @@ import EditPost from './EditPost'
 import { DataProvider } from './contexts/DataContext'
 
 const App = () => {
-  
-
- 
 
   return (
     <div className='App'>
