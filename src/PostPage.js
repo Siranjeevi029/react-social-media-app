@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
-import { Link, Navigate } from 'react-router-dom'
+import  { useContext } from 'react'
+import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom';
 import DataContext from './contexts/DataContext';
 

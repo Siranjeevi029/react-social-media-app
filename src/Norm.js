@@ -1,15 +1,6 @@
-import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
-import Missing from './Missing'
-import Home from './Home'
-import Nav from './Nav'
-import NewPost from './NewPost'
-import PostPage from './PostPage'
-import About from './About';
-import { Route, Routes, Link, Outlet } from 'react-router-dom'
-import Post from './Post'
-import PostLayout from './PostLayout'
+
+import { Link, Outlet } from 'react-router-dom'
+
 
 
 const Norm = () => {

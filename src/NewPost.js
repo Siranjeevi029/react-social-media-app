@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
-import { useParams } from 'react-router-dom'
+import  { useContext } from 'react'
+
 import DataContext from './contexts/DataContext';
 
 const NewPost = () => {

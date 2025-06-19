@@ -1,9 +1,6 @@
-import {createContext,useState,useEffect, Children} from 'react' 
-import { Route, Routes, Link, Navigate, useNavigate, useLocation } from 'react-router-dom'
-import Post from '../Post'
-import PostLayout from '../PostLayout'
+import {createContext,useState,useEffect} from 'react' 
+import { useNavigate, useLocation } from 'react-router-dom'
 import api from '../api/posts'
-import EditPost from '../EditPost'
 import useWindowSize from '../hooks/useWindowSize'
 import useAxiosFetch from '../hooks/useAxiosFetch'
 
