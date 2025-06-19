@@ -7,7 +7,7 @@ const Home = () => {
   const { searchResults, fetchError, isLoading } = useContext(DataContext);
 
   const posts = searchResults;
-  // console.log(posts);
+ 
 
   return (
 
