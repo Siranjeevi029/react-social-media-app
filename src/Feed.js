@@ -7,7 +7,7 @@ const Feed = ({posts}) => {
      <>
         {
             posts.map((item) => {
-              
+             
                 
                 return (
                     

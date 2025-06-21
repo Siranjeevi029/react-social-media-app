@@ -30,7 +30,7 @@ export const DataProvider = ({children})=>{
     
   // }, []);
 
-  const {data,fetchError,isLoading} = useAxiosFetch('http://localhost:3500/posts');
+  const {data,fetchError,isLoading} = useAxiosFetch('https://sample-spring-7j2j.onrender.com/posts');
   const [posts, setPosts] = useState([]);
   const [search, setSearch] = useState('');
   const [searchResults, setSearchResults] = useState([]);
