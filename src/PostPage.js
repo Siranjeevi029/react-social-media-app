@@ -9,7 +9,7 @@ const PostPage = () => {
   const { id } = useParams();
 
   const post = posts.find((item) => {
-    return item.id.toString() === id;
+    return item.id === id;
   })
 
   return (

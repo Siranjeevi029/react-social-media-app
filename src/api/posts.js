@@ -1,6 +1,6 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL:'https://sample-spring-7j2j.onrender.com'
+    baseURL:'http://localhost:8080'
 })
 export default api;

@@ -8,7 +8,7 @@ const Feed = ({posts}) => {
         {
             posts.map((item) => {
              
-                
+                // console.log(item.id);
                 return (
                     
                    <Post

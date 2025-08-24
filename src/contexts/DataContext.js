@@ -30,7 +30,7 @@ export const DataProvider = ({children})=>{
     
   // }, []);
 
-  const {data,fetchError,isLoading} = useAxiosFetch('https://sample-spring-7j2j.onrender.com/posts');
+  const {data,fetchError,isLoading} = useAxiosFetch('http://localhost:8080/posts');
   const [posts, setPosts] = useState([]);
   const [search, setSearch] = useState('');
   const [searchResults, setSearchResults] = useState([]);
@@ -68,7 +68,7 @@ const [editBody,setEditBody] = useState('');
     const datetime = calcTime();
     
     
-    const id = posts.length ? Number(posts[posts.length - 1].id) + 1 : 1;
+   
 
     let unique = 0;
 
@@ -78,7 +78,7 @@ const [editBody,setEditBody] = useState('');
 
 
     const newPost = {
-      id:String(id),
+      
       datetime,
       title: postTitle,
       body: postBody,
@@ -87,11 +87,11 @@ const [editBody,setEditBody] = useState('');
    
     
      try{
-      await api.post('/posts',newPost);
+      const val = await api.post('/posts',newPost);
      
      
       
-      const alteredPosts = [...posts, newPost]
+      const alteredPosts = [...posts, val.data]
       setPosts(alteredPosts);
       setPostBody('');
     setPostTitle('');

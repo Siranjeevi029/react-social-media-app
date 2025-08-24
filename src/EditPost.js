@@ -10,7 +10,7 @@ const EditPost = () => {
   const {id} = useParams();
  
 
-  const post = posts.find(post=>String(post.id)===id);
+  const post = posts.find(post=>post.id===id);
   
  
   useEffect(()=>{
